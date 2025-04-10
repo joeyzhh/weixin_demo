@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-    <title>类似微信官网的静态页面</title>
+    <title>demo</title>
     <style>
         body {
             background-color: #ff4e4e;
@@ -26,28 +26,6 @@
 </head>
 
 <body class="text-white">
-    <!-- 导航栏 -->
-    <nav class="flex justify-between items-center p-4">
-        <div class="text-2xl font-bold">微信类似官网</div>
-        <div class="hidden md:flex space-x-4">
-            <a href="#" class="hover:text-gray-300">首页</a>
-            <a href="#" class="hover:text-gray-300">功能</a>
-            <a href="#" class="hover:text-gray-300">下载</a>
-            <a href="#" class="hover:text-gray-300">关于</a>
-        </div>
-        <div class="md:hidden">
-            <button id="menu-toggle" class="text-white focus:outline-none">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </div>
-    </nav>
-    <!-- 移动端菜单 -->
-    <div id="mobile-menu" class="hidden md:hidden flex-col p-4 space-y-2">
-        <a href="#" class="hover:text-gray-300">首页</a>
-        <a href="#" class="hover:text-gray-300">功能</a>
-        <a href="#" class="hover:text-gray-300">下载</a>
-        <a href="#" class="hover:text-gray-300">关于</a>
-    </div>
     <!-- 主内容区 -->
     <main>
         <h1 class="text-4xl md:text-6xl font-bold mb-4">微信，让沟通更简单</h1>
@@ -61,14 +39,6 @@
     <footer class="p-4 text-center text-sm">
         <p>&copy; 2025 微信类似官网. 保留所有权利.</p>
     </footer>
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
 </body>
 
 </html>

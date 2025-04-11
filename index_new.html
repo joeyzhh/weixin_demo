@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-    <title>demo</title>
+    <title>类似微信官网的静态页面</title>
     <style>
         body {
             background-color: #ff4e4e;
@@ -22,14 +22,34 @@
             justify-content: center;
             align-items: center;
         }
+
+        .underline {
+            width: 80%;
+            max-width: 600px;
+            border-bottom: 1px solid white;
+            margin: 1rem 0;
+        }
+
+        .content-container {
+            width: 80%;
+            max-width: 600px;
+            text-align: left;
+        }
     </style>
 </head>
 
 <body class="text-white">
     <!-- 主内容区 -->
     <main>
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">微信，让沟通更简单</h1>
-        <p class="text-lg md:text-xl mb-8">随时随地与亲朋好友保持联系，畅享便捷沟通体验。</p>
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">第12人</h1>
+        <div class="underline"></div>
+        <div class="content-container">
+            <p class="text-lg md:text-xl mb-8">免费查看每日方案排行榜单Top 10</p>
+            <p class="text-lg md:text-xl mb-8">机器分析、数据驱动、剔除情绪干扰</p>
+            <p class="text-lg md:text-xl mb-8">集结人类智慧与机器计算，在ZR的剧本中寻找平衡点</p>
+            <p class="text-lg md:text-xl mb-8">本app不预测未来，只提供多维参考</p>
+            <p class="text-lg md:text-xl mb-8">足球有11人，而聪明的决策者需要第12人</p>
+        </div>
         <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
             <button class="bg-white text-red-500 py-3 px-6 rounded-full hover:bg-gray-200">苹果端下载</button>
             <button class="bg-white text-red-500 py-3 px-6 rounded-full hover:bg-gray-200">安卓端下载</button>
